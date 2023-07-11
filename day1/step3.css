@@ -6,21 +6,44 @@
 
 body {
   margin: 0;
+  /* font-family: 'Diphylleia', serif; */
+  /* font-family: 'Grandiflora One', serif; */
   font-family: 'Pretendard Variable', Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   font-size: 18;
   line-height: 1.5;
+  /* background-color: rgb(225, 0, 0, 0.1); */
 }
 
-.ccc {
+.main {
+  /* background-color: rgb(225, 0, 0, 0.1); */
+}
+
+.section {
+  background-color: rgb(225, 0, 0, 0.1);
+}
+
+.section:nth-of-type(even) {
+  background-color: rgb(0, 0, 225, 0.1);
+}
+
+.container {
+  border: 1px solid black;
   margin-inline: auto;
   padding-block: 56px;
   padding-inline: 24px;
   /* background-color: rgb(255, 255, 255, 0.5); */
   max-width: 65ch;
 }
-.text {
-  font-family: 'Grandiflora One', serif;
+
+h2 {
+  font-family: 'Diphylleia', serif;
+}
+
+@media (width <= 600px) {
+  body {
+    font-size: 14px;
+  }
 }
