@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  /* 겁나 급진적인 방식인데 많이 씀,,, 편함,,모든 마진과 패딩을 없애줌,, */
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* 한글 단어는 안잘리면거 영어는 잘라서라도 해결 해 주는 방법 */
+  /* word-break: keep-all;
+  overflow-wrap: anywhere; */
+  /* 한글이라도 단어 잘라서 줄 바꿈(모바일에서는 무조건 이거 써야함) */
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  margin: 0;
+}
+.root {
+  height: 100dvh;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section {
+  min-height: 16px;
+  background-color: hsla(356, 100%, 76%, 0.444);
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+img {
+  /* !이미지 사이에 남는 공간ㄴ 없애주는 것! */
+  display: block;
+
+  max-width: 100%;
+}
